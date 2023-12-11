@@ -6,12 +6,18 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.229);
-  background-color: white;
+  box-shadow: 0 0 10px rgba(243, 241, 241, 0.229);
+  background-color: #FFb85c;
 
   > div {
     display: flex;
     align-items: center;
+
+    >.small {
+      width: 70px;
+      height: 70px;
+      color: $red;
+    }
 
     > svg {
       color: $red;

@@ -1,6 +1,11 @@
 import React from "react";
 import { Country, State } from "country-state-city";
 import Popup from 'reactjs-popup';
+import { getStatesOfCountry } from "country-state-city/lib/state";
+
+
+
+
 
 const Shipping = () => {
   return (
@@ -17,25 +22,29 @@ const Shipping = () => {
             <input type="text" placeholder="Enter City" />
           </div>
           <div>
-              {/* Compelte the code for the COUNTRY DROPDOWN*/}
+            
             <label>Country</label>
-
             <select>
-              <option value="">Country</option>
-// Enter the code here for country dropdown           
-                  </option>
-                ))}
+            
+             {Country.getAllCountries().map((x) => {return (<option value={x.isoCode}>{x.name}</option>)})}
+              
+           
             </select>
           </div>
           <div>
-              {/* Add the code for the STATE DROPDOWN*/}
-           
+          <label>State</label>
+          <select>
+          {State.getStatesOfCountry("IN").map((x) => {return (<option value={x.isoCode}>{x.name}</option>)})}
+           </select>
           </div>
           <div>
             <label>Pin Code</label>
             <input type="number" placeholder="Enter Pincode" />
           </div>
-        // Enter thr code for contact           
+          <div>
+            <label>Contact</label>
+            <input type="number" placeholder="Enter Contact Number" />
+          </div>        
           
           <Popup trigger=
                 {<button type = "button">Confirm Order</button>}

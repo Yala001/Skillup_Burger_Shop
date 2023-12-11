@@ -1,0 +1,21 @@
+@import "colors";
+
+
+
+ .proprietary1 {
+  background-color: $pink;
+        margin: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.5rem;
+        border-radius: 5px;
+ } 
+
+ .bluetored {
+  background-color: $red !important;
+ }
+
+ .bluetopink {
+  background-color: $pink !important;
+ }

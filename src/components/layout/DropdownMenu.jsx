@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
+
 function DropdownMenu() {
   const [navLinks, setNavLinks] = useState([]);
 
   useEffect(() => {
     const navs = [
-      { name: "Login", path: "/login" },
+      {name: "Login", path: "/login" },
       {name:"Orders", path:"/myorders"},
       {name:"Logout", path:"/login"}
       
@@ -16,18 +17,22 @@ function DropdownMenu() {
 
   return (
     <div>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <nav className="navbar navbar-expand-lg">
         <div className="container">
-          <a className="navbar-brand" href="#">
+          <a className="navbar-brand red" href="#">
           
           </a>
+          
+          
+              
           <div class="btn-group">
             <button
               type="button"
-              class="btn btn-primary dropdown-toggle"
+              class="btn dropdown-toggle red"
               data-bs-toggle="dropdown"
               data-bs-display="static"
               aria-expanded="false"
+              
             >
               Menu
             </button>
@@ -40,8 +45,10 @@ function DropdownMenu() {
                     </button>
                   </Link>
                 </li>
+                
               ))}
             </ul>
+            
           </div>
         </div>
       </nav>
