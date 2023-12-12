@@ -3,6 +3,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Popup from "reactjs-popup";
 import "reactjs-popup/dist/index.css";
+import burger4 from "../../assets/burger1.png";
 
 
 
@@ -19,7 +20,7 @@ function Contact () {
         
     </form>
     <span className="formBorder">
-<div><img src="bg.svg" alt="burger picture"/></div>
+<div><img src={burger4} alt="burger picture"/></div>
 
     </span>
 </section>

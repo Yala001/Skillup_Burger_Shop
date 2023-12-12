@@ -1,6 +1,8 @@
 // Write all the code here
 import React from "react";
 import ReactDOM from "react-dom";
+import searchicon from "../../assets/search_icon.png";
+import nelson from "../../assets/skj.jpg";
 
 
 const About = () => {
@@ -14,16 +16,18 @@ const About = () => {
                     <br />
                     <br />
                     <p>Explore the various types of food and burgers. Click below to see the menu</p>
+                    <a><a href="/menu"><img src={searchicon} alt="search icon"></img></a></a>
                 </article>
-                <a href="/menu"><img src="../assets/search-icon.png" alt="search icon"></img></a>
+                
                 <div>
                     <h2>founder</h2>
                     <article>
                     <div> 
-                    <img src="../../assets/skj.jpg" alt="photo of the owner Nelson" />
+                    <img src={nelson} alt="photo of the owner Nelson" />
                     <h3>Nelson</h3>
-                    <p>I am Nelson, the founder of the Burder Shop. Affiliated to God's taste</p> 
                     </div>
+                    <p>I am Nelson, the founder of the Burder Shop. Affiliated to God's taste</p> 
+                    
                     </article>
                 </div> 
 

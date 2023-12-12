@@ -47,7 +47,7 @@ function Header() {
               data-bs-display="static"
               aria-expanded="false"
             >
-              Menu
+              Account
             </button>
             <Link to="/cart">
                 <FiShoppingCart />
