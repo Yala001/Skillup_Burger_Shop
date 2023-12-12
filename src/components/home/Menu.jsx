@@ -1,10 +1,14 @@
 // Write all the code here
 import React from "react";
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import MenuCard from "../home/MenuCard.jsx";
 import menu from "../home/menus";
+import burger1 from "../../assets/burger1.png";
+import burger2 from "../../assets/burger2.png";
+import burger3 from "../../assets/burger3.png";
 
-function Menu() {
+const Menu = () => {
 
     return (
         <section id="menu">
@@ -13,18 +17,18 @@ function Menu() {
         {menu.map(menuItem => (
         <MenuCard
           itemNum={menuItem.itemNum}
-          title={menuItem.title}
           burgerSrc={menuItem.burgerSrc}
           price={menuItem.price}
+          title={menuItem.title}
+          
           delay={menuItem.delay}
           
-        />
-      ))}
           
-        
-        
+        />
+    ))}     
         </div>
-        </section>
-)
-}
+    </section>
+        )
+   } 
+
 export default Menu;

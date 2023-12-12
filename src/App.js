@@ -11,7 +11,7 @@ import Shipping from "./components/cart/Shipping";
 
 import Login from "./components/login/Login";
 import Profile from "./components/profile/Profile";
-// Add module imports for MY ORDERS
+import Founder from "./components/home/Founder";
 import MyOrders from "./components/myOrders/MyOrders";
 import OrderDetails from "./components/myOrders/OrderDetails";
 import About from "./components/about/About";
@@ -47,7 +47,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/me" element={<Profile />} />
         <Route path="/myOrders" element={<MyOrders />} />
-
+        <Route path="/Founder" element={<Founder />} />
         <Route path="/order/:id" element={<OrderDetails />} />
       
        

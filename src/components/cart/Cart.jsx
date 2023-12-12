@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import burger1 from "../../assets/burger1.png";
 import burger2 from "../../assets/burger2.png";
@@ -51,7 +52,7 @@ const Cart = () => {
           img={burger3}
           value={0}
           increment={() => increment(3)}
-          decrement={() => decrement(1)}
+          decrement={() => decrement(3)}
         /* Fill up the code for Cheese Burger similarly */
        />
 

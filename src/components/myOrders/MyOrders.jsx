@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
 import { AiOutlineEye } from "react-icons/ai";
 
@@ -28,7 +29,9 @@ const MyOrders = () => {
           <td>23</td>
           <td>Rs ₹2132</td>
           <td>COD</td>
-          <td><a href="/order/1">{AiOutlineEye}</a></td>
+          <td><Link to={`/order/${"asdsds"}`}>
+              <AiOutlineEye />
+              </Link></td>
           </tr>
 
             ))}

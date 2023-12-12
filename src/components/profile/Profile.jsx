@@ -1,4 +1,5 @@
 import React from "react";
+import ReactDOM from "react-dom";
 import { motion } from "framer-motion";
 import me from "../../assets/skj.jpg";
 import { Link } from "react-router-dom";

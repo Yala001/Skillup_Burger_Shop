@@ -1,5 +1,6 @@
 // Write all the code here
 import React from "react";
+import ReactDOM from "react-dom";
 
 
 const About = () => {
@@ -19,7 +20,7 @@ const About = () => {
                     <h2>founder</h2>
                     <article>
                     <div> 
-                    <img src="../assets/skj.jpg" alt="photo of the owner Nelson" />
+                    <img src="../../assets/skj.jpg" alt="photo of the owner Nelson" />
                     <h3>Nelson</h3>
                     <p>I am Nelson, the founder of the Burder Shop. Affiliated to God's taste</p> 
                     </div>

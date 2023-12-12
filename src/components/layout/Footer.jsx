@@ -1,5 +1,7 @@
 // Write all the code here
 import React from "react";
+import ReactDOM from "react-dom";
+
 const Footer = () => {
     
     const name = "Burgershop";
@@ -10,8 +12,9 @@ const Footer = () => {
         <div>
             <h2>Burger Shop</h2>
             <p>We are trying to give you the best taste possible</p>
-            <p className="strong">We give attention to genuine feedback </p>
-        <p> {name} {year}</p>
+            <p>We give attention to genuine feedback </p>
+            <br />
+        <strong> {name} {year}</strong>
         </div>
         <aside>
            

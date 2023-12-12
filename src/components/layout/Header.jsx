@@ -4,7 +4,14 @@
 import ReactLogo from "../../assets/Burger.svg";
 import DropdownMenu from "./DropdownMenu";
 import React, { useEffect, useState } from "react";
+import ReactDOM from "react-dom";
 import { Link } from "react-router-dom";
+
+import { IoFastFoodOutline } from "react-icons/io5";
+import { FiShoppingCart, FiLogIn } from "react-icons/fi";
+import { FaUser } from "react-icons/fa";
+import { motion } from "framer-motion";
+
 
 
 function Header() {
@@ -14,6 +21,7 @@ function Header() {
     const navs = [
       {name: "Login", path: "/login" },
       {name:"Orders", path:"/myorders"},
+
       {name:"Logout", path:"/login"}
       
     ]
@@ -25,9 +33,13 @@ function Header() {
     <div>
         <nav> 
           <img src ={ReactLogo} style={{width: 70, height: 70, color:"red" }} alt="burger icon"/>
-               
+          
+
             <div class="btn-group">
                 <a href="../">Home</a>
+                <a href="/contact">Contact</a>
+                <a href="/about">About</a>
+                
             <button
               type="button"
               class="btn dropdown-toggle red"
@@ -37,6 +49,9 @@ function Header() {
             >
               Menu
             </button>
+            <Link to="/cart">
+                <FiShoppingCart />
+            </Link>
             <ul class="dropdown-menu dropdown-menu-end">
               {navLinks.map((d, i) => (
                 <li key={i}>
